@@ -1,0 +1,25 @@
+export const company = {
+  name: "Pooja Chemicals",
+  tagline: "Total Water Management & Industrial Chemicals",
+  ceo: "Partha Sarathi",
+  establishedYear: 2017,
+  email: "poojachemicals123@gmail.com",
+  phone: "+91 90108 81170",
+  phoneHref: "+919010881170",
+  address: {
+    line1: "Sy. No. 125 Part, Plot No. 128/B",
+    line2: "IDA Mallapur, Industrial Development Area",
+    city: "Hyderabad, Secunderabad",
+    pincode: "500 076",
+    state: "Telangana",
+    country: "India",
+  },
+  mapsUrl: "https://maps.app.goo.gl/ERtRE1MkG6BRLzo19",
+  mapsQuery: "IDA Mallapur, Hyderabad, Telangana 500076",
+  social: {
+    facebook: "#",
+    instagram: "#",
+    twitter: "#",
+    linkedin: "#",
+  },
+} as const;
