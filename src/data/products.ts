@@ -124,4 +124,14 @@ export const catalog: ProductCategory[] = [
       p("Zeolite", "zeolite.jpg"),
     ],
   },
+  {
+    slug: "automobile-chemicals",
+    name: "Automobile Chemicals",
+    summary:
+  "Specialty automotive chemicals and vehicle-care solutions designed for cleaning, protection, maintenance and enhanced performance of automobiles.",
+    image: "/img/products/automobile-industry.jpg",
+    products: [
+      p("Dashboard Polish", "dashboard-polish.jpg")
+    ]
+  }
 ];

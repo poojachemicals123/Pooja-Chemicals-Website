@@ -48,4 +48,10 @@ export const industries: Industry[] = [
       "Admixtures, binders and ready-mix additives for construction, tiles and ceramic manufacturing.",
     image: "/img/products/ready-mix.jpg",
   },
+  {
+    slug: "automobile",
+    name: "Automobile",
+    blurb: "Fuel additives, coolant treatments, corrosion inhibitors and specialty chemicals designed to enhance vehicle performance, efficiency and equipment reliability.",
+    image: "/img/products/automobile-industry.jpg"
+  }
 ];
