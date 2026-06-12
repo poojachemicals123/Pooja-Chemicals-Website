@@ -20,7 +20,7 @@ export function Footer() {
         <div>
           <Link href="/" className="flex items-center gap-2.5">
             <Image
-              src="/img/Logo.png"
+              src="/img/logo.png"
               alt="Pooja Chemicals"
               width={150}
               height={103}
