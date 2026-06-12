@@ -105,6 +105,8 @@ export const catalog: ProductCategory[] = [
       p("Fabric Softeners", "fabric-soft.jpg"),
       p("Laundry Chemicals", "laundry.jpg"),
       p("Bleach", "bleach.png"),
+      p("High Grade Detergent Powder", "detergent.jpg"),
+      p("Liquid Detergent", "liquid-detergent.webp")
     ],
   },
   {
