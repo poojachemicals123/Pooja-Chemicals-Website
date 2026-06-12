@@ -131,7 +131,8 @@ export const catalog: ProductCategory[] = [
   "Specialty automotive chemicals and vehicle-care solutions designed for cleaning, protection, maintenance and enhanced performance of automobiles.",
     image: "/img/products/automobile-industry.jpg",
     products: [
-      p("Dashboard Polish", "dashboard-polish.jpg")
+      p("Dashboard Polish", "dashboard-polish.jpg"),
+      p("Tyre Polish","tyre-polish.jpg")
     ]
   }
 ];
