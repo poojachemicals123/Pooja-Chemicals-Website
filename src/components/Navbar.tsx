@@ -57,7 +57,7 @@ export function Navbar() {
           <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-6 lg:h-20">
             <Link href="/" className="relative z-50 flex items-center gap-3" onClick={() => setOpen(false)}>
               <Image
-                src="/img/Logo.png"
+                src="/img/logo.png"
                 alt="Pooja Chemicals"
                 width={150}
                 height={103}
