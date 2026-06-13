@@ -15,10 +15,8 @@ export const company = {
     country: "India",
   },
   mapsUrl: "https://maps.app.goo.gl/ERtRE1MkG6BRLzo19",
-  mapsQuery: "IDA Mallapur, Hyderabad, Telangana 500076",
   social: {
     facebook: "#",
-    instagram: "#",
     twitter: "#",
     linkedin: "#",
   },

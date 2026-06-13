@@ -7,7 +7,6 @@ import { FacebookIcon, InstagramIcon, TwitterIcon, LinkedinIcon, MailIcon, Phone
 
 const socials = [
   { label: "Facebook", href: company.social.facebook, Icon: FacebookIcon },
-  { label: "Instagram", href: company.social.instagram, Icon: InstagramIcon },
   { label: "Twitter", href: company.social.twitter, Icon: TwitterIcon },
   { label: "LinkedIn", href: company.social.linkedin, Icon: LinkedinIcon },
 ];
