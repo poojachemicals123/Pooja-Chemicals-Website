@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Container, Button } from "@/components/ui";
-import { FilterableProducts } from "@/components/FilterableProducts";
 import { ArrowRight } from "@/components/Icons";
+import { ProductGrid } from "@/components/ProductGrid";
 import { catalog } from "@/data/products";
 
 export const metadata: Metadata = {
@@ -46,16 +46,18 @@ export default function ProductsPage() {
 
           <div className="mt-12 border-t border-line pt-8">
             <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-soft">
-              {catalog.length} categories
+              Jump to a category
             </p>
             <ul className="mt-4 flex flex-wrap gap-2.5">
               {catalog.map((c) => (
-                <li
-                  key={c.slug}
-                  className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-ink"
-                >
-                  {c.name}
-                  <span className="text-xs font-semibold text-cta-600">{c.products.length}</span>
+                <li key={c.slug}>
+                  <a
+                    href={`#${c.slug}`}
+                    className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-cta/40 hover:text-cta-600"
+                  >
+                    {c.name}
+                    <span className="text-xs font-semibold text-cta-600">{c.products.length}</span>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -64,8 +66,29 @@ export default function ProductsPage() {
       </section>
 
       <Container className="py-12 sm:py-16">
-        <div id="catalog" className="scroll-mt-24">
-          <FilterableProducts />
+        <div id="catalog" className="space-y-16">
+          {catalog.map((c, i) => (
+            <section key={c.slug} id={c.slug} className="scroll-mt-24">
+              <div className="flex flex-wrap items-end justify-between gap-3 border-b border-line pb-5">
+                <div className="max-w-2xl">
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cta-600">
+                    {String(i + 1).padStart(2, "0")} · {c.products.length} products
+                  </span>
+                  <h2 className="mt-1.5 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+                    {c.name}
+                  </h2>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-soft">{c.summary}</p>
+                </div>
+                <a href="#catalog" className="text-xs font-semibold text-slate-soft transition-colors hover:text-cta-600">
+                  Back to top
+                </a>
+              </div>
+
+              <div className="mt-6">
+                <ProductGrid products={c.products} category={c.name} />
+              </div>
+            </section>
+          ))}
         </div>
 
         <div className="mt-20 rounded-3xl border border-line bg-white p-8 text-center shadow-soft sm:p-12">
