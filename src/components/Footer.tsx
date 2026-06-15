@@ -103,7 +103,7 @@ export function Footer() {
           <p>
             Designed &amp; developed by{" "}
             <a
-              href="https://akport.vercel.app"
+              href="https://abhiramankuntimaddi.com"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-white/90 transition-colors hover:text-cta-300"
