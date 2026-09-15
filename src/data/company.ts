@@ -1,11 +1,11 @@
 export const company = {
   name: "Pooja Chemicals",
   tagline: "Total Water Management & Industrial Chemicals",
-  ceo: "Partha Sarathi",
+  ceo: "PSM",
   establishedYear: 2017,
   email: "poojachemicals123@gmail.com",
-  phone: "+91 90108 81170",
-  phoneHref: "+919010881170",
+  phone: "+91 9391027216",
+  phoneHref: "+919391027216",
   address: {
     line1: "Sy. No. 125 Part, Plot No. 128/B",
     line2: "IDA Mallapur, Industrial Development Area",
