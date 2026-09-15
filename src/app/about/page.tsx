@@ -10,7 +10,7 @@ import { CheckIcon } from "@/components/Icons";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Pooja Chemicals is a Hyderabad-based chemical manufacturer specialising in total water management and effluent treatment, led by CEO Partha Sarathi.",
+    "Pooja Chemicals is a Hyderabad-based chemical manufacturer specialising in total water management and effluent treatment, led by CEO CEO.",
 };
 
 const expertise = [
